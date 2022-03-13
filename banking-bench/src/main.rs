@@ -160,7 +160,7 @@ fn main() {
     let iterations = value_t!(matches, "iterations", usize).unwrap_or(1000);
 
     let total_num_transactions = num_chunks * num_threads * packets_per_chunk;
-    let mint_total = 1_000_000_000_000;
+    let mint_total = 1_000_000_000;//10^6 lamports per SOL
     let GenesisConfigInfo {
         genesis_config,
         mint_keypair,

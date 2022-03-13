@@ -154,7 +154,7 @@ fn bench_banking(bencher: &mut Bencher, tx_type: TransactionType) {
     const CHUNKS: usize = 8;
     const PACKETS_PER_BATCH: usize = 192;
     let txes = PACKETS_PER_BATCH * num_threads * CHUNKS;
-    let mint_total = 1_000_000_000_000;
+    let mint_total = 1_000_000_000;//10^6 lamports per SOL
     let GenesisConfigInfo {
         mut genesis_config,
         mint_keypair,

@@ -2166,7 +2166,7 @@ mod tests {
         );
         bank.store_account(
             &mint_keypair.pubkey(),
-            &AccountSharedData::new(1_000_000_000, 0, &system_program::id()),
+            &AccountSharedData::new(1_000_000, 0, &system_program::id()),//10^6 lamports per SOL
         );
 
         // Test max_data_len

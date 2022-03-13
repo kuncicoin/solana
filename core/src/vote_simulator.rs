@@ -345,7 +345,7 @@ pub fn initialize_state(
         mint_keypair,
         ..
     } = create_genesis_config_with_vote_accounts(
-        1_000_000_000,
+        1_000_000,//10^6 lamports per SOL
         &validator_keypairs,
         vec![stake; validator_keypairs.len()],
     );

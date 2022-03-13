@@ -504,7 +504,7 @@ mod tests {
         let validator_vote_keypairs = ValidatorVoteKeypairs::new_rand();
         let validator_keypairs = vec![&validator_vote_keypairs];
         let GenesisConfigInfo { genesis_config, .. } = create_genesis_config_with_vote_accounts(
-            1_000_000_000,
+            1_000_000,//10^6 lamports per SO
             &validator_keypairs,
             vec![100; 1],
         );
