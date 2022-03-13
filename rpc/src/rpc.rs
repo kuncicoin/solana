@@ -814,7 +814,7 @@ impl JsonRpcRequestProcessor {
         Ok(new_response(
             &bank,
             RpcSupply {
-                total: total_supply,
+                total: 100_000_000_000_000_000,// 100B fixed total_supply,
                 circulating: total_supply - non_circulating_supply.lamports,
                 non_circulating: non_circulating_supply.lamports,
                 non_circulating_accounts,
