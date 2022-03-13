@@ -42,7 +42,7 @@ pub fn build_balance_message_with_config(
         lamports.to_string()
     } else {
         let sol = lamports_to_sol(lamports);
-        let sol_str = format!("{:.9}", sol);
+        let sol_str = format!("{:.6}", sol);
         if config.trim_trailing_zeros {
             sol_str
                 .trim_end_matches('0')
@@ -57,7 +57,7 @@ pub fn build_balance_message_with_config(
             let ess = if lamports == 1 { "" } else { "s" };
             format!(" lamport{}", ess)
         } else {
-            " SOL".to_string()
+            " KUNCI".to_string()
         }
     } else {
         "".to_string()

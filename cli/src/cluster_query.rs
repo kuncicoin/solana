@@ -216,7 +216,7 @@ impl ClusterQuerySubCommands for App<'_, '_> {
             ),
         )
         .subcommand(
-            SubCommand::with_name("supply").about("Get information about the cluster supply of SOL")
+            SubCommand::with_name("supply").about("Get information about the cluster supply of KUNCI")
             .arg(
                 Arg::with_name("print_accounts")
                     .long("print-accounts")
@@ -225,7 +225,7 @@ impl ClusterQuerySubCommands for App<'_, '_> {
             ),
         )
         .subcommand(
-            SubCommand::with_name("total-supply").about("Get total number of SOL")
+            SubCommand::with_name("total-supply").about("Get total number of KUNCI")
             .setting(AppSettings::Hidden),
         )
         .subcommand(
@@ -329,7 +329,7 @@ impl ClusterQuerySubCommands for App<'_, '_> {
                     Arg::with_name("lamports")
                         .long("lamports")
                         .takes_value(false)
-                        .help("Display balance in lamports instead of SOL"),
+                        .help("Display balance in lamports instead of KUNCI"),
                 ),
         )
         .subcommand(
@@ -340,7 +340,7 @@ impl ClusterQuerySubCommands for App<'_, '_> {
                     Arg::with_name("lamports")
                         .long("lamports")
                         .takes_value(false)
-                        .help("Display balance in lamports instead of SOL"),
+                        .help("Display balance in lamports instead of KUNCI"),
                 )
                 .arg(
                     Arg::with_name("number")
@@ -458,7 +458,7 @@ impl ClusterQuerySubCommands for App<'_, '_> {
                     Arg::with_name("lamports")
                         .long("lamports")
                         .takes_value(false)
-                        .help("Display rent in lamports instead of SOL"),
+                        .help("Display rent in lamports instead of KUNCI"),
                 ),
         )
     }
@@ -1333,7 +1333,7 @@ pub fn process_supply(
 
 pub fn process_total_supply(rpc_client: &RpcClient, _config: &CliConfig) -> ProcessResult {
     let supply = rpc_client.supply()?.value;
-    Ok(format!("{} SOL", lamports_to_sol(supply.total)))
+    Ok(format!("{} KUNCI", lamports_to_sol(supply.total)))
 }
 
 pub fn process_get_transaction_count(rpc_client: &RpcClient, _config: &CliConfig) -> ProcessResult {

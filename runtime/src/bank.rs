@@ -15726,7 +15726,7 @@ pub(crate) mod tests {
             ])
             .collect();
 
-        // Initialize accounts; all have larger SOL balances than current Bank built-ins
+        // Initialize accounts; all have larger KUNCI balances than current Bank built-ins
         let account0 = AccountSharedData::new(pubkeys_balances[0].1, 0, &Pubkey::default());
         bank.store_account(&pubkeys_balances[0].0, &account0);
         let account1 = AccountSharedData::new(pubkeys_balances[1].1, 0, &Pubkey::default());
@@ -16331,7 +16331,7 @@ pub(crate) mod tests {
         // Explicit fee schedule
 
         let expected_fee_structure = &[
-            // (units requested, fee in SOL),
+            // (units requested, fee in KUNCI),
             (0, 0.0),
             (5_000, 0.0),
             (10_000, 0.0),

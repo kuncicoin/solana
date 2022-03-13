@@ -204,7 +204,7 @@ impl LocalCluster {
             create_stake_config_account(
                 1,
                 &stake_config::Config {
-                    warmup_cooldown_rate: 1_000_000.0f64,//10^6 lamports per SOL
+                    warmup_cooldown_rate: 1_000_000.0f64,//10^6 lamports per KUNCI
                     slash_penalty: std::u8::MAX,
                 },
             ),

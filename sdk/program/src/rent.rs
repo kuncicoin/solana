@@ -16,11 +16,11 @@ pub struct Rent {
 }
 
 /// default rental rate in lamports/byte-year, based on:
-///  10^6 lamports per SOL
-///  $1 per SOL
+///  10^6 lamports per KUNCI
+///  $1 per KUNCI
 ///  $0.01 per megabyte day
 ///  $3.65 per megabyte year
-pub const DEFAULT_LAMPORTS_PER_BYTE_YEAR: u64 = 1_000_000  / 100 * 365 / (1024 * 1024);//10^6 lamports per SOL
+pub const DEFAULT_LAMPORTS_PER_BYTE_YEAR: u64 = 1_000_000  / 100 * 365 / (1024 * 1024);//10^6 lamports per KUNCI
 
 /// default amount of time (in years) the balance has to include rent for
 pub const DEFAULT_EXEMPTION_THRESHOLD: f64 = 2.0;
