@@ -1,3 +1,5 @@
+use solana_sdk::{genesis_config::GenesisConfig};
+/*
 use {
     crate::{
         stakes::{create_and_add_stakes, StakerInfo},
@@ -226,11 +228,12 @@ fn add_stakes(
         .map(|staker_info| create_and_add_stakes(genesis_config, staker_info, unlock_info, None))
         .sum::<u64>()
 }
+*/
 
-pub fn add_genesis_accounts(genesis_config: &mut GenesisConfig, mut issued_lamports: u64) {
+pub fn add_genesis_accounts(_genesis_config: &mut GenesisConfig, mut _issued_lamports: u64) {
     // add_stakes() and add_validators() award tokens for rent exemption and
     //  to cover an initial transfer-free period of the network
-
+    /*
     issued_lamports += add_stakes(
         genesis_config,
         CREATOR_STAKER_INFOS,
@@ -262,6 +265,7 @@ pub fn add_genesis_accounts(genesis_config: &mut GenesisConfig, mut issued_lampo
         &UNLOCKS_ALL_DAY_ZERO,
         None,
     );
+    */
 }
 
 #[cfg(test)]
