@@ -1,13 +1,13 @@
 const endpoint = {
   http: {
-    devnet: 'http://api.devnet.solana.com',
-    testnet: 'http://api.testnet.solana.com',
-    'mainnet-beta': 'http://api.mainnet-beta.solana.com',
+    devnet: 'http://api.devnet.kunci.network',
+    testnet: 'http://api.testnet.kunci.network',
+    'mainnet-beta': 'http://api.mainnet.kunci.network',
   },
   https: {
-    devnet: 'https://api.devnet.solana.com',
-    testnet: 'https://api.testnet.solana.com',
-    'mainnet-beta': 'https://api.mainnet-beta.solana.com',
+    devnet: 'https://api.devnet.kunci.network',
+    testnet: 'https://api.testnet.kunci.network',
+    'mainnet-beta': 'https://api.mainnet.kunci.network',
   },
 };
 

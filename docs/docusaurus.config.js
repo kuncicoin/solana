@@ -47,7 +47,7 @@ module.exports = {
   themeConfig: {
     navbar: {
       logo: {
-        alt: "Solana Logo",
+        alt: "Kuncicoin Logo",
         src: "img/logo-horizontal.svg",
         srcDark: "img/logo-horizontal-dark.svg",
       },

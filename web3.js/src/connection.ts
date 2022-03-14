@@ -2691,7 +2691,7 @@ export class Connection {
       throw new Error(
         `Transaction was not confirmed in ${duration.toFixed(
           2,
-        )} seconds. It is unknown if it succeeded or failed. Check signature ${signature} using the Solana Explorer or CLI tools.`,
+        )} seconds. It is unknown if it succeeded or failed. Check signature ${signature} using the Kuncicoin Explorer or CLI tools.`,
       );
     }
 
@@ -3430,7 +3430,7 @@ export class Connection {
    * Request an allocation of lamports to the specified address
    *
    * ```typescript
-   * import { Connection, PublicKey, LAMPORTS_PER_SOL } from "@solana/web3.js";
+   * import { Connection, PublicKey, LAMPORTS_PER_SOL } from "@kunci/web3.js";
    *
    * (async () => {
    *   const connection = new Connection("https://api.testnet.solana.com", "confirmed");

@@ -1,7 +1,7 @@
 {
-  "name": "@solana/web3.js",
+  "name": "@kunci/web3.js",
   "version": "0.0.0-development",
-  "description": "Solana Javascript API",
+  "description": "Kuncicoin Javascript API",
   "keywords": [
     "api",
     "blockchain"

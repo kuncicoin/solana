@@ -13,13 +13,13 @@
 [codecov-url]: https://codecov.io/gh/solana-labs/solana-web3.js
 [npm-image]: https://img.shields.io/npm/v/@solana/web3.js.svg?style=flat
 [npm-downloads-image]: https://img.shields.io/npm/dm/@solana/web3.js.svg?style=flat
-[npm-url]: https://www.npmjs.com/package/@solana/web3.js
+[npm-url]: https://www.npmjs.com/package/@kunci/web3.js
 [semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release-url]: https://github.com/semantic-release/semantic-release
 [code-style-prettier-image]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
 [code-style-prettier-url]: https://github.com/prettier/prettier
 
-# Solana JavaScript API
+# Kuncicoin JavaScript API
 
 This is the Solana Javascript API built on the Solana [JSON RPC API](https://docs.solana.com/apps/jsonrpc-api)
 
@@ -30,23 +30,23 @@ This is the Solana Javascript API built on the Solana [JSON RPC API](https://doc
 ### Yarn
 
 ```
-$ yarn add @solana/web3.js
+$ yarn add @kunci/web3.js
 ```
 
 ### npm
 
 ```
-$ npm install --save @solana/web3.js
+$ npm install --save @kunci/web3.js
 ```
 
 ### Browser bundle
 
 ```html
 <!-- Development (un-minified) -->
-<script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
+<script src="https://unpkg.com/@kunci/web3.js@latest/lib/index.iife.js"></script>
 
 <!-- Production (minified) -->
-<script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+<script src="https://unpkg.com/@kunci/web3.js@latest/lib/index.iife.min.js"></script>
 ```
 
 ## Development Environment Setup
@@ -66,14 +66,14 @@ Install the latest Solana release from https://docs.solana.com/cli/install-solan
 ### Javascript
 
 ```js
-const solanaWeb3 = require('@solana/web3.js');
+const solanaWeb3 = require('@kunci/web3.js');
 console.log(solanaWeb3);
 ```
 
 ### ES6
 
 ```js
-import * as solanaWeb3 from '@solana/web3.js';
+import * as solanaWeb3 from '@kunci/web3.js';
 console.log(solanaWeb3);
 ```
 
@@ -103,13 +103,13 @@ activate it:
 
 ```ini
 [libs]
-node_modules/@solana/web3.js/module.flow.js
+node_modules/@kunci/web3.js/module.flow.js
 ```
 
 ## Releases
 
-Releases are available on [Github](https://github.com/solana-labs/solana-web3.js/releases)
-and [npmjs.com](https://www.npmjs.com/package/@solana/web3.js)
+Releases are available on [Github](https://github.com/kuncicoin/kunci-web3.js/releases)
+and [npmjs.com](https://www.npmjs.com/package/@kunci/web3.js)
 
 Each Github release features a tarball containing API documentation and a
 minified version of the module suitable for direct use in a browser environment
