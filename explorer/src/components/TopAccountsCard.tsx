@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Location } from "history";
-import { AccountBalancePair } from "@solana/web3.js";
+import { AccountBalancePair } from "@kunci/web3.js";
 import { useRichList, useFetchRichList, Status } from "providers/richList";
 import { LoadingCard } from "./common/LoadingCard";
 import { ErrorCard } from "./common/ErrorCard";
@@ -101,7 +101,7 @@ export function TopAccountsCard() {
                 <tr>
                   <th className="text-muted">Rank</th>
                   <th className="text-muted">Address</th>
-                  <th className="text-muted text-end">Balance (SOL)</th>
+                  <th className="text-muted text-end">Balance (KUNCI)</th>
                   <th className="text-muted text-end">% of {header} Supply</th>
                 </tr>
               </thead>

@@ -3,10 +3,10 @@ import {
   HumanizeDuration,
   HumanizeDurationLanguage,
 } from "humanize-duration-ts";
-import { PublicKey } from "@solana/web3.js";
+import { PublicKey } from "@kunci/web3.js";
 
 // Switch to web3 constant when web3 updates superstruct
-export const LAMPORTS_PER_SOL = 1000000000;
+export const LAMPORTS_PER_SOL = 1000000;
 
 export const NUM_TICKS_PER_SECOND = 160;
 export const DEFAULT_TICKS_PER_SLOT = 64;
@@ -40,7 +40,7 @@ export function lamportsToSol(lamports: number | BN): number {
 
   const absLamports = lamports.abs();
   const lamportsString = absLamports.toString(10).padStart(10, "0");
-  const splitIndex = lamportsString.length - 9;
+  const splitIndex = lamportsString.length - 6;
   const solString =
     lamportsString.slice(0, splitIndex) +
     "." +

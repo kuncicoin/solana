@@ -3,7 +3,7 @@ import {
   SystemProgram,
   SignatureResult,
   ParsedInstruction,
-} from "@solana/web3.js";
+} from "@kunci/web3.js";
 import { SolBalance } from "utils";
 import { InstructionCard } from "../InstructionCard";
 import { Copyable } from "components/common/Copyable";
@@ -58,7 +58,7 @@ export function TransferWithSeedDetailsCard(props: {
       </tr>
 
       <tr>
-        <td>Transfer Amount (SOL)</td>
+        <td>Transfer Amount (KUNCI)</td>
         <td className="text-lg-end">
           <SolBalance lamports={info.lamports} />
         </td>

@@ -3,7 +3,7 @@ import {
   SignatureResult,
   StakeProgram,
   ParsedInstruction,
-} from "@solana/web3.js";
+} from "@kunci/web3.js";
 import { SolBalance } from "utils";
 import { InstructionCard } from "../InstructionCard";
 import { Address } from "components/common/Address";
@@ -57,7 +57,7 @@ export function WithdrawDetailsCard(props: {
       </tr>
 
       <tr>
-        <td>Withdraw Amount (SOL)</td>
+        <td>Withdraw Amount (KUNCI)</td>
         <td className="text-lg-end">
           <SolBalance lamports={info.lamports} />
         </td>

@@ -1,3 +1,4 @@
+// @ts-nocheck
 export function displayTimestamp(
   unixTimestamp: number,
   shortTimeZoneName = false

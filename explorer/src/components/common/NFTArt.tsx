@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Stream, StreamPlayerApi } from "@cloudflare/stream-react";
-import { PublicKey } from "@solana/web3.js";
+import { PublicKey } from "@kunci/web3.js";
 import {
   programs,
   MetadataJson,
@@ -27,7 +27,7 @@ const LoadingPlaceholder = () => (
 );
 
 const ErrorPlaceHolder = () => (
-  <img src={ErrorLogo} width="120" height="120" alt="Solana Logo" />
+  <img src={ErrorLogo} width="120" height="120" alt="Kuncicoin Logo" />
 );
 
 const ViewOriginalArtContentLink = ({ src }: { src: string }) => {

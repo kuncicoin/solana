@@ -12,7 +12,7 @@ import {
   TransactionSignature,
   SystemProgram,
   SystemInstruction,
-} from "@solana/web3.js";
+} from "@kunci/web3.js";
 import { SolBalance } from "utils";
 import { ErrorCard } from "components/common/ErrorCard";
 import { LoadingCard } from "components/common/LoadingCard";
@@ -293,7 +293,7 @@ function StatusCard({
 
         {fee && (
           <tr>
-            <td>Fee (SOL)</td>
+            <td>Fee (KUNCI)</td>
             <td className="text-lg-end">
               <SolBalance lamports={fee} />
             </td>
@@ -406,8 +406,8 @@ function AccountsCard({ signature }: SignatureProps) {
             <tr>
               <th className="text-muted">#</th>
               <th className="text-muted">Address</th>
-              <th className="text-muted">Change (SOL)</th>
-              <th className="text-muted">Post Balance (SOL)</th>
+              <th className="text-muted">Change (KUNCI)</th>
+              <th className="text-muted">Post Balance (KUNCI)</th>
               <th className="text-muted">Details</th>
             </tr>
           </thead>

@@ -4,7 +4,7 @@ import {
   Connection,
   EpochInfo,
   EpochSchedule,
-} from "@solana/web3.js";
+} from "@kunci/web3.js";
 import { useQuery } from "../utils/url";
 import { useHistory, useLocation } from "react-router-dom";
 import { reportError } from "utils/sentry";
@@ -46,7 +46,7 @@ export function clusterSlug(cluster: Cluster): string {
 export function clusterName(cluster: Cluster): string {
   switch (cluster) {
     case Cluster.MainnetBeta:
-      return "Mainnet Beta";
+      return "Mainnet";
     case Cluster.Testnet:
       return "Testnet";
     case Cluster.Devnet:
@@ -63,11 +63,11 @@ export const DEVNET_URL = clusterApiUrl("devnet");
 export function clusterUrl(cluster: Cluster, customUrl: string): string {
   switch (cluster) {
     case Cluster.Devnet:
-      return DEVNET_URL.replace("api", "explorer-api");
+      return DEVNET_URL.replace("api.devnet.solana.com", "api.devnet.kunci.network");
     case Cluster.MainnetBeta:
-      return MAINNET_BETA_URL.replace("api", "explorer-api");
+      return MAINNET_BETA_URL.replace("api.mainnet-beta.solana.com", "api.mainnet.kunci.network");
     case Cluster.Testnet:
-      return TESTNET_URL.replace("api", "explorer-api");
+      return TESTNET_URL.replace("api.testnet.solana.com", "api.testnet.kunci.network");
     case Cluster.Custom:
       return customUrl;
   }

@@ -3,7 +3,7 @@ import {
   SignatureResult,
   ParsedInstruction,
   ParsedTransaction,
-} from "@solana/web3.js";
+} from "@kunci/web3.js";
 
 import { UnknownDetailsCard } from "../UnknownDetailsCard";
 import { TransferDetailsCard } from "./TransferDetailsCard";

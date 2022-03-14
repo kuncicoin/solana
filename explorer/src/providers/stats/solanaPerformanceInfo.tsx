@@ -1,4 +1,4 @@
-import { PerfSample } from "@solana/web3.js";
+import { PerfSample } from "@kunci/web3.js";
 import { ClusterStatsStatus } from "./solanaClusterStats";
 
 export type PerformanceInfo = {

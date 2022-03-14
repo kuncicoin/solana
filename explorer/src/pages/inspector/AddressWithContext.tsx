@@ -1,5 +1,5 @@
 import React from "react";
-import { PublicKey, SystemProgram } from "@solana/web3.js";
+import { PublicKey, SystemProgram } from "@kunci/web3.js";
 import { Address } from "components/common/Address";
 import {
   Account,
@@ -94,7 +94,7 @@ function AccountInfo({
       {ownerAddress
         ? `Owned by ${
             ownerLabel || ownerAddress
-          }. Balance is ${lamportsToSolString(info.data.lamports)} SOL`
+          }. Balance is ${lamportsToSolString(info.data.lamports)} KUNCI`
         : "Account doesn't exist"}
     </span>
   );

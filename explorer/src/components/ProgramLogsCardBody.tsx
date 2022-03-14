@@ -1,5 +1,6 @@
+// @ts-nocheck
 import React from "react";
-import { Message, ParsedMessage } from "@solana/web3.js";
+import { Message, ParsedMessage } from "@kunci/web3.js";
 import { Cluster } from "providers/cluster";
 import { TableCardBody } from "components/common/TableCardBody";
 import { programLabel } from "utils/tx";

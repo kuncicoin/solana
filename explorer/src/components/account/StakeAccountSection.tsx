@@ -10,7 +10,7 @@ import {
   StakeAccountType,
 } from "validators/accounts/stake";
 import BN from "bn.js";
-import { StakeActivationData } from "@solana/web3.js";
+import { StakeActivationData } from "@kunci/web3.js";
 import { Epoch } from "components/common/Epoch";
 
 const MAX_EPOCH = new BN(2).pow(new BN(64)).sub(new BN(1));
@@ -124,13 +124,13 @@ function OverviewCard({
           </td>
         </tr>
         <tr>
-          <td>Balance (SOL)</td>
+          <td>Balance (KUNCI)</td>
           <td className="text-lg-end text-uppercase">
             <SolBalance lamports={account.lamports || 0} />
           </td>
         </tr>
         <tr>
-          <td>Rent Reserve (SOL)</td>
+          <td>Rent Reserve (KUNCI)</td>
           <td className="text-lg-end">
             <SolBalance lamports={stakeAccount.meta.rentExemptReserve} />
           </td>
@@ -189,7 +189,7 @@ function DelegationCard({
         {stake && (
           <>
             <tr>
-              <td>Delegated Stake (SOL)</td>
+              <td>Delegated Stake (KUNCI)</td>
               <td className="text-lg-end">
                 <SolBalance lamports={stake.delegation.stake} />
               </td>
@@ -198,14 +198,14 @@ function DelegationCard({
             {activation && (
               <>
                 <tr>
-                  <td>Active Stake (SOL)</td>
+                  <td>Active Stake (KUNCI)</td>
                   <td className="text-lg-end">
                     <SolBalance lamports={activation.active} />
                   </td>
                 </tr>
 
                 <tr>
-                  <td>Inactive Stake (SOL)</td>
+                  <td>Inactive Stake (KUNCI)</td>
                   <td className="text-lg-end">
                     <SolBalance lamports={activation.inactive} />
                   </td>

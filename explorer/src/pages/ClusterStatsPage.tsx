@@ -43,7 +43,7 @@ function StakingComponent() {
   const { status } = useCluster();
   const supply = useSupply();
   const fetchSupply = useFetchSupply();
-  const coinInfo = useCoinGecko("solana");
+  const coinInfo = useCoinGecko("kunci-coin");
   const { fetchVoteAccounts, voteAccounts } = useVoteAccounts();
 
   function fetchData() {
@@ -57,14 +57,15 @@ function StakingComponent() {
     }
   }, [status]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const delinquentStake = React.useMemo(() => {
+  const delinquentStake = 0.000001;
+  /*const delinquentStake = React.useMemo(() => {
     if (voteAccounts) {
       return voteAccounts.delinquent.reduce(
         (prev, current) => prev + current.activatedStake,
         0
       );
     }
-  }, [voteAccounts]);
+  }, [voteAccounts]);*/
 
   const activeStake = React.useMemo(() => {
     if (voteAccounts && delinquentStake) {

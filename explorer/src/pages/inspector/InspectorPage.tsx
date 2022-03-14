@@ -1,5 +1,5 @@
 import React from "react";
-import { Message, PACKET_DATA_SIZE } from "@solana/web3.js";
+import { Message, PACKET_DATA_SIZE } from "@kunci/web3.js";
 
 import { TableCardBody } from "components/common/TableCardBody";
 import { SolBalance } from "utils";
@@ -286,7 +286,7 @@ function LoadedView({
 }
 
 const DEFAULT_FEES = {
-  lamportsPerSignature: 5000,
+  lamportsPerSignature: 5,
 };
 
 function OverviewCard({

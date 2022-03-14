@@ -3,7 +3,7 @@ import {
   Connection,
   TransactionSignature,
   ParsedConfirmedTransaction,
-} from "@solana/web3.js";
+} from "@kunci/web3.js";
 import { useCluster, Cluster } from "../cluster";
 import * as Cache from "providers/cache";
 import { ActionType, FetchStatus } from "providers/cache";
@@ -68,7 +68,7 @@ async function fetchDetails(
   }
   dispatch({
     type: ActionType.Update,
-    status: fetchStatus,
+    status: FetchStatus.Fetched,
     key: signature,
     data: { transaction },
     url,

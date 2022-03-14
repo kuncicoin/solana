@@ -1,4 +1,4 @@
-import { TransactionError } from "@solana/web3.js";
+import { TransactionError } from "@kunci/web3.js";
 import { Cluster } from "providers/cluster";
 import { programLabel } from "utils/tx";
 import { getTransactionInstructionError } from "utils/program-err";
@@ -29,12 +29,12 @@ export function prettyProgramLogs(
   let prettyError;
   if (!logs) {
     if (error) throw new Error(JSON.stringify(error));
-    throw new Error("No logs detected");
+    //throw new Error("No logs detected");
   } else if (error) {
     prettyError = getTransactionInstructionError(error);
   }
 
-  logs.forEach((log) => {
+  logs?.forEach((log) => {
     if (log.startsWith("Program log:")) {
       prettyLogs[prettyLogs.length - 1].logs.push({
         prefix: prefixBuilder(depth),
